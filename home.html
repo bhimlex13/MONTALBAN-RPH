@@ -7,73 +7,650 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <title>Montalban</title>
     <link rel="stylesheet" href="./css/style.css">
+
+    <!--=============== REMIXICONS ===============-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css" crossorigin="">
+
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="/assets/css/swiper-bundle.min.css">
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="./assets/css/styles.css">
 </head>
 
 <body>
-    <!-- Nav-bar -->
-    <div class="nav-box-area">
-        <header>
-            <nav class="navbar navbar-expand-lg navbar-dark p-3 fixed-top" style="background-color: #163020;">
-                <div class="container-fluid">
-                    <div class="brand-logo">
-                        <a href="./index.html"><img src="./img/logo2.png" height="40" width="40" /></a>
-                    </div>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
-                        aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
+    <header class="header" id="header">
 
-                    <div class=" collapse navbar-collapse" id="navbarNavDropdown">
-                        <ul class="navbar-nav ms-auto ">
-                            <li class="nav-item">
-                                <a class="nav-link mx-2 active" aria-current="page" href="#">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link mx-2 "  href="./history.html">History</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link mx-2" href="./place.html">Places</a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link mx-2 dropdown-toggle" href="#" id="navbarDropdownMenuLink"
-                                    role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    More
-                                </a>
-                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                    <li><a class="dropdown-item" href="./food.html">Foods</a></li>
-                                    <li><a class="dropdown-item" href="#"></a></li>
-                                    <li><a class="dropdown-item" href="#">About Us</a></li>
-                                </ul>
-                            </li>
-                        </ul>
+        <div class="nav-box-area">
+            <header>
+                <nav class="navbar navbar-expand-lg navbar-dark p-3 fixed-top" style="background-color: #163020;">
+                    <div class="container-fluid">
+                        <div class="brand-logo">
+                            <a href="./index.html"><img src="./img/logo2.png" height="40" width="40" /></a>
+                        </div>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <div class=" collapse navbar-collapse" id="navbarNavDropdown">
+                            <ul class="navbar-nav ms-auto ">
+                                <li class="nav-item">
+                                    <a class="nav-link mx-2 active" aria-current="page" href="#">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link mx-2 " href="#rooms">Places</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link mx-2" href="#foods">Foods</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link mx-2 dropdown-toggle" href="#" id="navbarDropdownMenuLink"
+                                        role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        More
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                        <li><a class="dropdown-item" href="./history.html">History</a></li>
+                                        <li><a class="dropdown-item" href="./index.html">Title</a></li>
+                                        <li><a class="dropdown-item" href="./about.html">About Us</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                </div>
-            </nav>
-        </header>
+                </nav>
+            </header>
+        </div>
+
+        <!-- <div class="head-top">
+            <div class="site-name">
+                <span class="hotel">Hotel</span><span class="hub">hub</span>
+            </div>
+            <div class="site-nav">
+                <span id="nav-btn" class="hotel">MENU <i class="fas fa-bars"></i></span>
+            </div>
+        </div> -->
+
+        <div class="head-bottom flex">
+            <video id="videoBG" autoplay loop muted plays-inline>
+                <source src="./img/banner-A.mp4" type="video/mp4">
+            </video>
+
+            <div class="container-text ">
+                <span>M</span>
+                <span>O</span>
+                <span>N</span>
+                <span>T</span>
+                <span>A</span>
+                <span>L</span>
+                <span>B</span>
+                <span>A</span>
+                <span>N</span>
+            </div>
+        </div>
+    </header>
+    <!-- end of header -->
+
+
+    <!-- wave footer -->
+
+    <div class="container-wave">
+        <div class="wave"></div>
+        <div class="wave"></div>
+        <div class="wave"></div>
     </div>
 
-    <!-- End of Nav-bar -->
+    <!-- end of wave footer -->
+    <!-- fullscreen modal -->
+    <div id="modal"></div>
+    <!-- end of fullscreen modal -->
 
-    <!-- content-section -->
-    <section class="home">
-        <div class="home-banner">
+    <div class="container-border">
+        <img src="./img/border-new.png" alt="border">
+    </div>
 
-            <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quo debitis, expedita dolorum quasi explicabo necessitatibus quisquam, est, libero doloribus porro nisi recusandae maiores vitae itaque! Molestiae quia id debitis?</h1>
+
+
+    <!-- Place Section -->
+
+
+    <section class="rooms sec-width" id="rooms">
+        <div class="place-title">
+            <h2 class="place-text">Tourist Sites in Montalban</h2>
+        </div>
+        <div class="rooms-container">
+
+            <!-- single room -->
+            <article class="room">
+                <div class="room-image">
+                    <img src="./img/lubog.jpg" alt="room image">
+                </div>
+                <div class="room-text">
+                    <p class="rate">
+                        <span>Mt. Lubog</span>
+                    </p>
+
+                    <ul>
+                        <li>
+                            <i class="fa-solid fa-location-dot"></i>
+                            Rodriguez, Rizal
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-table-list"></i>
+                            Culture , Hiking Sites
+                        </li>
+                    </ul>
+                    <p>
+                        Mt. Lubog offers an exciting day hike in Rizal that takes approximately 1 hour and 45 minutes,
+                        depending on your walking speed, to reach the summit. Similar to Mt. Lagyo and other mountains
+                        in Montalban, Mt. Lubog features limestone formations. What makes Mt. Lubog distinct from other
+                        hiking spots in Rodriguez is the dense forest cover that shelters climbers until they reach the
+                        open area at the rocky summit.</p>
+                    <p>Standing at 955 meters above sea level (MASL), the summit provides a picturesque landscape of
+                        rocks, making hikers feel as though they are perched at one of the entrances to the stunning
+                        view of the southern Sierra Madre. The summit, often called "Simbahang Bato," resembles a maze
+                        of boulders and karst formations, adding to the allure of Mt. Lubog.</p>
+                </div>
+            </article>
+            <!-- end of single room -->
+
+            <!-- single room -->
+            <article class="room">
+                <div class="room-image">
+                    <img src="./img/avilon.jpg" alt="room image">
+                </div>
+                <div class="room-text">
+                    <p class="rate">
+                        <span>Avilon Zoo</span>
+                    </p>
+
+                    <ul>
+                        <li>
+                            <i class="fa-solid fa-location-dot"></i>
+                            Rodriguez, Rizal
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-table-list"></i>
+                            Leisure , Wildlife Experience
+                        </li>
+                    </ul>
+                    <p>
+
+                        Avilon Zoo is the largest place for animals in the Philippines. It's in Rodriguez, Rizal, and it
+                        covers 7.5 hectares. The zoo is home to more than 3,000 animals, including birds, mammals,
+                        reptiles, amphibians, fishes, and invertebrates. They represent over 500 species! Many animals,
+                        especially those native to the Philippines, were born at the zoo through special programs that
+                        take care of them.</p>
+                    <p>At Avilon Zoo, you can take guided tours and trips to learn about animals, their lives, and the
+                        efforts to save them. There are interesting animals to see, and you can also try feeding
+                        creatures like Arapaimas. The zoo has friendly animals that you can meet and have fun with!</p>
+                </div>
+            </article>
+            <!-- end of single room -->
+
+            <!-- single room -->
+            <article class="room">
+                <div class="room-image">
+                    <img src="./img/mal-ac.jpg" alt="room image">
+                </div>
+                <div class="room-text">
+                    <p class="rate">
+                        <span>Mt. Mal-ac</span>
+                    </p>
+
+                    <ul>
+                        <li>
+                            <i class="fa-solid fa-location-dot"></i>
+                            Rodriguez, Rizal
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-table-list"></i>
+                            Culture , Hiking Sites
+                        </li>
+                    </ul>
+                    <p>
+
+                        If you're seeking a less-traveled mountain hike with a refreshing waterfall stop, Mount Malac is
+                        a great choice. The trail mixes grassy ridges and a bit of rocky river trekking. While it takes
+                        about 2-3 hours to reach the summit, 1.5 hours to the waterfalls, and 2 hours back, totaling 5.5
+                        to 6.5 hours of walking on sometimes uncovered paths, it's doable for determined beginners.
+                        Mount Malac is located southeast of Mount Cabuan and north of Mount Caypipili.</p>
+                    <p>The trail starts in a dry riverbed before the climb. The first part has vegetation for shade, but
+                        some areas may show burned grass due to kaingin. As you get closer to the summit, grassland
+                        dominates, offering a panoramic view with a few scattered trees. A popular combo is to hike Mt.
+                        Macareba + Mt. Mal-ac with a side trip to Puray Falls or Baawan Waterfalls. Hiking Mount Mal-ac
+                        rewards with a stunning 360 view of the Sierra Madre Mountain, and you can even choose to camp
+                        overnight at Mogul Peak.</p>
+                </div>
+            </article>
+            <!-- end of single room -->
+
+            <!-- single room -->
+            <article class="room">
+                <div class="room-image">
+                    <img src="./img/palm.jpg" alt="room image">
+                </div>
+                <div class="room-text">
+                    <p class="rate">
+                        <span>Palms and Terraces Swimming Pools</span>
+                    </p>
+
+                    <ul>
+                        <li>
+                            <i class="fa-solid fa-location-dot"></i>
+                            Brgy Chico St, Rodriguez, Rizal
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-table-list"></i>
+                            Leisure, Recreation
+                        </li>
+                    </ul>
+                    <p>
+                        The Palms and Terraces Swimming Pool in Montalban, Rizal, is more than just a swimming
+                        destination; it's a versatile venue that caters to various needs. As a public swimming pool, it
+                        offers a welcoming space for individuals and families to enjoy a leisurely swim in its
+                        well-maintained waters. Beyond being a recreational spot, this facility transforms into a hub
+                        for sports enthusiasts, serving as a Swimming Sports Facility where competitions and events can
+                        be hosted.</p>
+                    <p>In addition to its sporting aspect, The Palms and Terraces Swimming Pool doubles as a charming
+                        Events Place, making it an ideal choice for special occasions like weddings, birthdays, and
+                        parties. The picturesque surroundings, combined with the well-designed pool area, create a
+                        vibrant atmosphere for celebrations. Whether you're looking for a place to swim, compete, or
+                        commemorate significant moments, this versatile public swimming pool has something to offer for
+                        everyone.</p>
+                </div>
+            </article>
+            <!-- end of single room -->
+
+            <!-- single room -->
+            <article class="room">
+                <div class="room-image">
+                    <img src="./img/sipit.jpg" alt="room image">
+                </div>
+                <div class="room-text">
+                    <p class="rate">
+                        <span>Mt. Sipit Ulang</span>
+                    </p>
+
+                    <ul>
+                        <li>
+                            <i class="fa-solid fa-location-dot"></i>
+                            Rodriguez, Rizal
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-table-list"></i>
+                            Culture , Hiking Sites
+                        </li>
+                    </ul>
+                    <p>
+
+                        In Rodriguez, Rizal, you'll find Mt. Sipit-Ulang, a popular spot known for its awesome rock
+                        formations and
+                        limestone paths. It's become a favorite destination lately, with a 3/9 difficulty grade and just
+                        a short
+                        walk up to 252 meters above sea level.</p>
+                    <p>The name "Sipit Ulang" comes from a giant crab's petrified claw, seemingly reaching for the sky.
+                        This spot
+                        provides a fantastic view of Mt. Pamitinan, Mt. Binacayan, and Mt. Ayaas from its summit. The
+                        hike starts in
+                        a meadow after crossing a small brook, gradually going up through trees and plants, with some
+                        intimidating
+                        and eerie rocks and narrow formations. Navigating tight spaces and climbing sharp rocks can be a
+                        challenge,
+                        but the thrill of slipping and sliding through these paths adds to the adventure. The diverse
+                        rock
+                        formations along the trail enhance the beauty of the hike.</p>
+                </div>
+            </article>
+            <!-- end of single room -->
+
+            <!-- single room -->
+            <article class="room">
+                <div class="room-image">
+                    <img src="./img/wawa.jpg" alt="room image">
+                </div>
+                <div class="room-text">
+                    <p class="rate">
+                        <span>Wawa Dam</span>
+                    </p>
+
+                    <ul>
+                        <li>
+                            <i class="fa-solid fa-location-dot"></i>
+                            Rodriguez, Rizal
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-table-list"></i>
+                            Environmental Sites, Nature preserve
+                        </li>
+                    </ul>
+                    <p>
+                        Wawa Dam, also known as Montalban Dam, is a captivating tourist destination situated in the
+                        picturesque
+                        Montalban Gorge, part of the Sierra Madre Mountains in Rodriguez, Rizal, Philippines. This
+                        gravity dam, with
+                        its slight arch, stands proudly over the Marikina River, offering a stunning 360-meter high
+                        backdrop of the
+                        Montalban Gorge, creating a breathtaking water gap in the Sierra Madre.</p>
+                    <p>Constructed in 1904 during the American colonial era, Wawa Dam started operating in 1909 to meet
+                        the water
+                        needs of Manila. Steeped in history, the dam played a crucial role in World War II as the
+                        battleground
+                        between the US Army and the Imperial Japanese Army during the Battle of Wawa Dam. Although no
+                        longer
+                        Manila's primary water source since the completion of Angat Dam in 1968, Wawa Dam has
+                        transformed into a
+                        captivating tourist site. Visitors can explore the historic dam, marvel at the surrounding
+                        landscape, and
+                        appreciate the protected natural beauty of the Pamitinan Protected Landscape. Wawa Dam stands as
+                        both a
+                        historical landmark and a serene haven for nature lovers, offering a glimpse into the past and a
+                        peaceful
+                        retreat in the present.</p>
+                </div>
+            </article>
+            <!-- end of single room -->
         </div>
     </section>
-    <!-- End of content-section -->
+
+    <!-- end of Place Section -->
+
+    <div class="container-border">
+        <img src="./img/border-new.png" alt="border">
+    </div>
+
+
+    <!-- Food Section  -->
+
+    <div class="container-place" id="foods">
+        <h1 class="place-text">Montalban Foods</h1>
+        <h2 class="place-des">
+            Montalban, also called Rodriguez, is famous not only for its stunning nature and exciting tourism but also
+            for its varied and tasty food. <br> The town's food scene combines classic Filipino tastes, local
+            specialties, and a bit of modern fusion. Let's take a look at Montalban's delicious food culture.</h2>
+        <section class="container">
+            <div class="card__container swiper">
+                <div class="card__content">
+                    <div class="swiper-wrapper">
+                        <article class="card__article swiper-slide">
+                            <div class="card__image">
+                                <img src="./img/food1.jpg" alt="image" class="card__img">
+                                <div class="card__shadow"></div>
+                            </div>
+
+                            <div class="card__data">
+                                <h3 class="card__name"><i class='bx bxs-location-plus'> Brgy.Isidro</i></h3>
+                                <p class="card__description">
+                                    'D' Original Sinangkutsang Manok ni Mang Romy since 1983.
+                                </p>
+                            </div>
+                        </article>
+
+
+
+                        <article class="card__article swiper-slide">
+                            <div class="card__image">
+                                <img src="./img/food2.jpg" alt="image" class="card__img">
+                                <div class="card__shadow"></div>
+                            </div>
+
+                            <div class="card__data">
+                                <h3 class="card__name"><i class='bx bxs-location-plus'> Sitio Quinao, Brgy.Puray</i>
+                                </h3>
+                                <p class="card__description">
+                                    Pinangatna Biya /<br>Binangi Ubag
+                                </p>
+                            </div>
+                        </article>
+
+
+
+                        <article class="card__article swiper-slide">
+                            <div class="card__image">
+                                <img src="./img/food3.jpg" alt="image" class="card__img">
+                                <div class="card__shadow"></div>
+                            </div>
+
+                            <div class="card__data">
+                                <h3 class="card__name"><i class='bx bxs-location-plus'> Brgy.Puray</i></h3>
+                                <p class="card__description">
+                                    Ginataan Suso<br>in Barangay Puray
+                                </p>
+                            </div>
+                        </article>
+
+                        <article class="card__article swiper-slide">
+                            <div class="card__image">
+                                <img src="./img/food4.jpg" alt="image" class="card__img">
+                                <div class="card__shadow"></div>
+                            </div>
+
+                            <div class="card__data">
+                                <h3 class="card__name"><i class='bx bxs-location-plus'> Brgy.Manggahan</i></h3>
+                                <p class="card__description">
+                                    Sinigang na<br>hipon sa mangga
+                                </p>
+
+                            </div>
+                        </article>
+
+                        <article class="card__article swiper-slide">
+                            <div class="card__image">
+                                <img src="./img/food5.jpg" alt="image" class="card__img">
+                                <div class="card__shadow"></div>
+                            </div>
+
+                            <div class="card__data">
+                                <h3 class="card__name"><i class='bx bxs-location-plus'> Brgy.Macabud</i></h3>
+                                <p class="card__description">
+                                    Binulukawang<br>Manok
+                                </p>
+                            </div>
+                        </article>
+
+                        <article class="card__article swiper-slide">
+                            <div class="card__image">
+                                <img src="./img/food6.jpg" alt="image" class="card__img">
+                                <div class="card__shadow"></div>
+                            </div>
+
+                            <div class="card__data">
+                                <h3 class="card__name"><i class='bx bxs-location-plus'> Brgy.San Rafael</i></h3>
+                                <p class="card__description">
+                                    Sangkutsang<br>Manok
+                                </p>
+                            </div>
+                        </article>
+
+                        <article class="card__article swiper-slide">
+                            <div class="card__image">
+                                <img src="./img/food7.jpg" alt="image" class="card__img">
+                                <div class="card__shadow"></div>
+                            </div>
+
+                            <div class="card__data">
+                                <h3 class="card__name"><i class='bx bxs-location-plus'> Brgy. San Jose</i></h3>
+                                <p class="card__description">
+                                    Special<br>Pinakbet
+                                </p>
+                            </div>
+                        </article>
+
+                        <article class="card__article swiper-slide">
+                            <div class="card__image">
+                                <img src="./img/food8.jpg" alt="image" class="card__img">
+                                <div class="card__shadow"></div>
+                            </div>
+
+                            <div class="card__data">
+                                <h3 class="card__name"><i class='bx bxs-location-plus'> Brgy. Rosario</i></h3>
+                                <p class="card__description">
+                                    Adobong<br>Manok
+                                </p>
+                            </div>
+                        </article>
+
+                    </div>
+                </div>
+
+                <!-- Navigation buttons -->
+                <div class="swiper-button-next">
+                    <i class="ri-arrow-right-s-line"></i>
+                </div>
+
+                <div class="swiper-button-prev">
+                    <i class="ri-arrow-left-s-line"></i>
+                </div>
+
+                <!-- Pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+    </div>
+
+    <!-- End of Food Section -->
+
+
+
+    <!--  Costumer Section -->
+    <section class="customers" id="customers">
+        <div class="container-border">
+            <img src="./img/border-new.png" alt="border">
+        </div>
+
+        <div class="sec-width">
+            <div class="heritage-title-box">
+                <h1 class="place-text">Heritage</h1>
+                <h2 class="heritage-des">
+                    Montalban, also called Rodriguez, is a place in Rizal, Philippines, with a strong history and
+                    culture. Its heritage shows a mix of native traditions, Spanish influence, and modern Filipino
+                    culture, highlighting the town's enduring spirit.</h2>
+            </div>
+            <div class="customers-container">
+
+                <!-- single customer -->
+                <div class="customer">
+                    <img src="./img/h1.jpg" alt="customer image">
+                </div>
+                <!-- end of single customer -->
+
+                <!-- single customer -->
+                <div class="customer">
+                    <img src="./img/h2.png" alt="customer image">
+                </div>
+                <!-- end of single customer -->
+
+                <!-- single customer -->
+                <div class="customer">
+                    <img src="./img/h3.jpg" alt="customer image">
+                </div>
+                <!-- end of single customer -->
+            </div>
+        </div>
+    </section>
+
+    <!-- End of Costumer Section -->
+
+    <!-- Festivals Section-->
+
+    <section class="customers" id="customers">
+        <div class="container-border">
+            <img src="./img/border-new.png" alt="border">
+        </div>
+
+        <div class="sec-width">
+            <div class="heritage-title-box">
+                <h1 class="place-text">Montalban Festival</h1>
+                <h2 class="heritage-des">
+                    The Montalban Festival is a lively and culturally diverse celebration held each year in Rodriguez,
+                    Rizal, Philippines. It showcases the town's strong connection to its heritage, creative talents, and
+                    unity within the community. With vibrant festivities, it's a must-see for both locals and tourists,
+                    offering a unique and engaging experience.</h2>
+            </div>
+            <div class="customers-container">
+
+                <!-- single customer -->
+                <div class="customer">
+                    <img src="./img/f1.jpg" alt="customer image">
+                </div>
+                <!-- end of single customer -->
+
+                <!-- single customer -->
+                <div class="customer">
+                    <img src="./img/f2.jpg" alt="customer image">
+                </div>
+                <!-- end of single customer -->
+
+                <!-- single customer -->
+                <div class="customer">
+                    <img src="./img/f3.jpg" alt="customer image">
+                </div>
+                <!-- end of single customer -->
+
+                <!-- single customer -->
+                <div class="customer">
+                    <img src="./img/f4.jpg" alt="customer image">
+                </div>
+                <!-- end of single customer -->
+
+                <!-- single customer -->
+                <div class="customer">
+                    <img src="./img/f5.jpg" alt="customer image">
+                </div>
+                <!-- end of single customer -->
+
+                <!-- single customer -->
+                <div class="customer">
+                    <img src="./img/f6.jpg" alt="customer image">
+                </div>
+                <!-- end of single customer -->
+
+                <!-- single customer -->
+                <div class="customer">
+                    <img src="./img/f7.jpg" alt="customer image">
+                </div>
+                <!-- end of single customer -->
+
+                <!-- single customer -->
+                <div class="customer">
+                    <img src="./img/f8.jpg" alt="customer image">
+                </div>
+                <!-- end of single customer -->
+
+                <!-- single customer -->
+                <div class="customer">
+                    <img src="./img/f9.jpg" alt="customer image">
+                </div>
+                <!-- end of single customer -->
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- End of Festivals Section -->
+
+    <!-- End of Home-section -->
+
+
 
     <!-- Footer -->
-    <!-- <footer class="text-white" style="background-color: #163020;">
+    <footer class="text-white" style="background-color: #163020;">
         <div class="container">
-          <p>&copy; 2024 RPH | MONTALBAN</p>
+            <p>&copy; 2024 RPH | MONTALBAN</p>
         </div>
-      </footer> -->
+    </footer>
 
     <!-- End of footer -->
+
 
 
     <!-- Bootstrap JS -->
@@ -83,6 +660,13 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script src="./js/script.js"></script>
+
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <!--=============== SWIPER JS ===============-->
+    <script src="./assets/js/swiper-bundle.min.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="./assets/js/main.js"></script>
 </body>
 
 </html>
