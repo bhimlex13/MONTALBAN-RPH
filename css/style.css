@@ -481,11 +481,12 @@ img {
 }
 
 
-@media screen and (max-width: 1600px) {
+@media screen and (max-width: 1700px) {
     .container-text {
         font-size: 135px;
     }
 }
+
 
 @media screen and (max-width: 1200px) {
     .container-text {
