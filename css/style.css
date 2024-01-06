@@ -474,11 +474,33 @@ img {
     align-items: center;
     height: 100VH;
     flex-wrap: wrap;
-    font-size: 230px;
+    font-size: 215px;
     font-weight: 900;
     font-family: 'Poppins', sans-serif;
     text-shadow: 0px 4px 10px black;
 }
+
+
+@media screen and (max-width: 1600px) {
+    .container-text {
+        font-size: 140px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .container-text {
+        font-size: 120px;
+    }
+}
+
+
+@media screen and (max-width: 1000px) {
+    .container-text {
+        font-size: 80px;
+    }
+}
+
+
 
 @media screen and (max-width: 430px) {
     .container-text>span {
@@ -486,11 +508,9 @@ img {
     }
 }
 
-@media screen and (max-width: 1400px) {
-    .container-text {
-        font-size: 150px;
-    }
-}
+
+
+
 
 .container-text>span {
     animation: glow 2s ease-in-out infinite;
