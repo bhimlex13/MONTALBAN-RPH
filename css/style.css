@@ -483,13 +483,13 @@ img {
 
 @media screen and (max-width: 1600px) {
     .container-text {
-        font-size: 145px;
+        font-size: 135px;
     }
 }
 
 @media screen and (max-width: 1200px) {
     .container-text {
-        font-size: 120px;
+        font-size: 110px;
     }
 }
 
